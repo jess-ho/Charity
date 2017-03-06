@@ -1,0 +1,18 @@
+/* -- FONTS -- */
+
+$primaryFont: "Opens Sans", sans-serif;
+$secondaryFont: "Raleway", serif;
+$tertiaryFont: Georgia, serif;
+
+/* -- COLORS -- */
+
+$accentColor: rgb(222, 60, 47);
+$standardColor: rgb(50, 50, 50);
+
+/* -- MIXINS -- */
+
+@mixin backgroundFull($backrepeat, $backsize, $backpos) {
+	background-repeat: $backrepeat;
+	background-size: $backsize;
+	background-position: $backpos;
+}

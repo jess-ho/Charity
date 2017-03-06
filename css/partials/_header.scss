@@ -1,0 +1,150 @@
+/* -- HEADER -- */
+
+header {
+	width: 100%;
+	position: relative;
+	font-family: $secondaryFont;
+}
+
+.header-menu__brand {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 10vh;
+}
+
+.header-menu__brand-hidden {
+	flex-grow: 1;
+}
+
+.logo {
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	flex-grow: 12;
+
+	img {
+		vertical-align: middle;
+		width: 60px;
+	}
+}
+
+.social {
+	display: flex;
+	justify-content: space-around;
+	flex-grow: 1;
+
+	i {
+		font-size: 0.9rem;
+	}
+}
+
+.social a {
+	color: lightgray;
+	transition: all .3s ease-out;
+}
+
+.header-nav {
+	background: $standardColor;
+	text-transform: uppercase;
+
+	ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+
+		li {
+			padding: 15px 40px;
+			border-left: 1px solid lightgray;
+
+			&:last-child {
+				border-right: 1px solid lightgray;
+			}
+		}
+	}
+}
+
+.header-nav a {
+	color: lightgray;
+	transition: all .3s ease;
+	letter-spacing: 1px;
+}
+
+.header-nav a:hover, .header-nav a:active, .header-menu-hidden__social a:hover, .header-menu-hidden__social a:active, .social a:hover, .social a:active {
+	color: $accentColor;
+}
+
+
+//hidden menu
+
+input#hidden-menu {
+	display: none;
+}
+
+.header-menu-hidden {
+	position: fixed;
+	top: -100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	background: rgba(50,50,50,0.9);
+	font-size: 20px;
+	color: white;
+	text-transform: uppercase;
+	transition: all .6s ease;
+
+	a {
+		color: white;
+	}
+}
+
+label[for="hidden-menu"] {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+input#hidden-menu:checked + .header-menu-hidden {
+	top: 0;	
+}
+
+.header-nav-hidden { 
+	display: flex;
+	height: 100%;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding: 20px;
+
+	li {
+		margin: 20px;
+		width: 33.33%;
+		letter-spacing: 1px;
+		position: relative;
+
+		&::before {
+			content: ""; 
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			bottom: 0;
+			left: 0;
+			background: $accentColor;
+			transform: scaleX(0);
+			transition: all .3s ease;
+		}
+
+		&:hover::before {
+			transform: scaleX(1);
+		}
+	}
+}
+
+.header-menu-hidden__social {
+	padding-bottom: 30px;
+	letter-spacing: 10px;
+
+	a {
+		transition: all .3s ease;
+	}
+}

@@ -1,0 +1,80 @@
+/* -- GLOBAL -- */
+body {
+	font-size: 62.5%;
+	color: $standardColor;
+	text-align: center;
+	font-family: $primaryFont;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+span {
+	font-weight: bold;
+}
+
+p {
+	margin: 0;
+}
+
+h2 {
+	font-family: $secondaryFont;
+	text-transform: uppercase;
+	font-weight: 300; 
+	font-size: 2.5rem;
+	letter-spacing: 1px;
+}
+
+h3 {
+	font-size: 1.9rem;
+	font-weight: 600;
+	font-family: $secondaryFont;
+	letter-spacing: 1px;
+}
+
+.heading-light {
+	color: white;
+}
+
+.accent {
+	color: $accentColor;
+}
+
+.button-submit {
+	text-transform: uppercase;
+	padding: 5px 20px;
+	background: transparent;
+	color: lightgray;
+	border: 1px solid lightgray;
+	font-family: "Raleway";
+	letter-spacing: 1px;
+	font-size: 0.8rem;
+	transform: scale(1);
+	transition: all .3s ease;
+
+	&:hover {
+		background: $accentColor;
+		transform: scale(1.1);
+	}
+}
+
+label {
+	cursor: pointer;
+}
+
+img {
+	max-width: 100%;
+}

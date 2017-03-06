@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Mercy Heart</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:300,400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header> <!-- background image -->
+		<div class="header-menu"> <!-- logo + navigation -->
+			<div class="header-menu__brand"> <!-- logo bar -->
+				<div class="header-menu__brand-hidden">
+					<label for="hidden-menu">
+						<i class="fa fa-bars"></i>
+					</label>
+				</div>
+
+				<h1 class="logo"><span>Mercy</span>
+				<img src="assets/logo.png" alt="Mercy Heart's logo: heart"> Heart</h1>
+
+				<div class="social">
+					<a href="https://facebook.com/"><i class="fa fa-facebook-f"></i></a>
+					<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.google.ca/"><i class="fa fa-google"></i></a>
+				</div>
+			</div>
+
+			<nav class="header-nav"> <!-- navigation bar, duh -->
+				<ul class="wrapper">
+					<li><a href="#">Main</a></li>
+					<li><a href="#">Causes</a></li>
+					<li><a href="#">Events</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Pages</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- background image or image-image? can possibly make a image-scroller -->
+
+
+
+		<input type="checkbox" id="hidden-menu">
+		<nav class="header-menu-hidden">
+
+			<label for="hidden-menu"><i class="fa fa-times-circle-o"></i></label>
+
+			<!-- navigation bar, duh -->
+			<ul class="header-nav-hidden wrapper">
+				<li><a href="#">Main</a></li>
+				<li><a href="#">Causes</a></li>
+				<li><a href="#">Events</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Pages</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+
+			<div class="header-menu-hidden__social">
+				<a href="https://facebook.com/"><i class="fa fa-facebook-f"></i></a>
+				<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.google.ca/"><i class="fa fa-google"></i></a>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="hero-image">
+				<div class="wrapper">
+					<p>Help Needy People</p>
+					<h2 class="heading-light wrapper"><span><span class="accent">Charity</span> is</span> willingly given <span>from heart</span></h2> <!-- span is for bolded -->
+
+					<button class="button-submit">Join Us</button>
+				</div>
+				<!-- <div>Scroll bar</div> -->
+			</div>
+
+			<div class="participation">
+				<div class="participation-donate">
+					<h3 class="heading-light">Donator</h3>
+					<p>Do good by stealth, and blush to find it fame</p>
+					<button class="button-submit">Donate Us</button>
+				</div><div class="participation-volunteer"> <!-- hacking inline-block white-space -->
+					<h3 class="heading-light">Volunteer</h3>
+					<p>Give the gift of volunteering to those who needed</p>
+					<button class="button-submit">Join Us</button>
+				</div><div class="participation-adopt"> <!-- hacking inline-block white-space -->
+					<h3 class="heading-light">Adopter</h3>
+					<p>Adoption is willingly given from your heart</p>
+					<button class="button-submit">Adopt a Kid</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="urgent-cause"> <!-- background image -->
+			<div class="wrapper">
+				<div class="urgent-cause__graph">
+					<h2><span>Most</span> Urgent Cause</h2><!-- the graph thing --><div class="urgent-cause__graph-stat"> <!-- background image of circle -->
+						<img src="assets/statusbar.png" alt="95% status">
+						<p><span><span class="accent">95</span>%</span> Donated</p>
+					</div><div class="urgent-cause__graph-details">
+						<p><span>$80 000</span> Needed</p>
+						<p><span>$76 000</span> Gathered</p>
+						<p><span>1220</span> Donators</p>
+					</div>
+				</div>
+
+				<button class="button-submit">View Details</button>
+
+				<blockquote> <!-- before after for quotations -->
+					<p>Sed ut perspiciatis unde omste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam.</p>
+
+					<p class="signature"><span class="accent">Lynda May,</span> Manager</p>
+				</blockquote>
+			</div>
+		</section>
+
+		<section class="recent-cause">
+			<div class="wrapper">
+				<h2><span>Recent</span> Causes</h2>
+
+				<div class="recent-cause__donate-nav"> <!-- sub nav -->
+					<ul>
+						<li><a href="#">All</a></li>
+						<li><a href="#">Donate</a></li>
+						<li><a href="#">Volunteer</a></li>
+						<li><a href="#">Adopting</a></li>
+						<li><a href="#">Charity</a></li>
+					</ul>
+				</div>
+
+				<div class="recent-cause__option"> <!-- wrap options -->
+					<div> <!-- donation options -->
+						<figure>
+							<img src="assets/08.jpg" alt="Sad woman">
+							<figcaption><p>Donate for Water</p></figcaption>
+						</figure>
+
+						<div class="progress">
+							<p>South Africa needs water</p>
+						</div>
+
+						<div class="recent-cause__option-goal"> <!-- flex -->
+							<p><span>$<span class="accent">52</span>k</span> Gathered</p>
+							<p class="of">of</p>
+							<p><span>$<span class="accent">80</span>k</span> Needed</p>
+						</div>
+
+						<button class="button-submit">Donate</button>
+					</div>
+
+					<div>
+						<figure>
+							<img src="assets/04.jpg" alt="Homeless kids">
+							<figcaption><p>Child Adoption</p></figcaption>
+						</figure>
+
+						<div class="progress">
+							<p>Adopt a child from Asia</p>
+						</div>
+
+						<div class="recent-cause__option-goal">
+							<p><span>$<span class="accent">29</span>k</span> Gathered</p>
+							<p class="of">of</p>
+							<p><span>$<span class="accent">65</span>k</span> Needed</p>
+
+							</div>
+
+						<button class="button-submit">Donate</button>
+					</div>
+					<div>
+						<figure>
+							<img src="assets/07.jpg" alt="Smiling children">
+							<figcaption><p>Stop Hunger</p></figcaption>
+						</figure>
+
+						<div class="progress">
+							<p>Save children from hunger</p>
+						</div>
+
+						<div class="recent-cause__option-goal">
+							<p><span>$<span class="accent">28</span>k</span> Gathered</p>
+							<p class="of">of</p>
+							<p><span>$<span class="accent">30</span>k</span> Needed</p>
+
+						</div>
+
+						<button class="button-submit">Donate</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ad"> <!-- random ad of something -->
+			<div class="ad-images">
+				<img src="https://unsplash.it/800/200" alt="">
+				<img src="https://unsplash.it/800/200" alt="">
+				<img src="assets/01.jpg" alt="">
+				<img src="assets/04.jpg" alt="">
+				<img src="assets/07.jpg" alt="">
+			</div>
+
+			<div class="ad-purchase">
+				<p><span class="accent">Like this theme?</span> Get your copy of this great theme now!</p>
+
+				<button class="button-submit">Purchase</button>
+			</div>
+		</section>
+
+		<section class="blog">
+			<div class="wrapper"> <!-- blog -->
+				<h2 class="heading-light"><span>Our</span> Blog</h2>
+
+				<div class="blog-outer-container clearfix">
+					<div class="blog-inner-container">
+						<div class="blogItem blogItem1"> <!-- background image -->
+							<div class="blog-social">
+								<p><i class="fa fa-clock-o accent"></i> Dec 17</p>
+								<p><i class="fa fa-heart-o accent"></i> 15 likes</p>
+							</div>
+						</div>
+						<div class="blogItem blogItem2">
+							<div class="blog-social">
+								<p><i class="fa fa-clock-o accent"></i> Dec 15</p>
+								<p><i class="fa fa-heart-o accent"></i> 18 likes</p>
+							</div>
+						</div>
+						<div class="blogItem blogItem3">
+							<div class="blog-social">
+								<p><i class="fa fa-clock-o accent"></i> Dec 8</p>
+								<p><i class="fa fa-heart-o accent"></i> 26 likes</p>
+							</div>
+						</div>
+						<div class="blogItem blogItem4">
+							<div class="blog-social">
+								<p><i class="fa fa-clock-o accent"></i> Dec 7</p>
+								<p><i class="fa fa-heart-o accent"></i> 19 likes</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="blog-inner-container featured">
+						<div class="blog-container__featured">
+							<div class="blog-social social_featured">
+								<p><i class="fa fa-clock-o accent"></i> 17 Dec '14</p>
+
+								<p><i class="fa fa-heart-o accent"></i> 21 Likes</p>
+
+								<p><i class="fa fa-comment-o accent"></i> 28 Comments</p>
+							</div>
+							<div class="blog-container__featured-info">
+								<h3>Lorem ipsum dolor</h3>
+								<p class="accent">Adopting Charity</p>
+								<p>Sed ut perspiciatis unde omnis iste natus error Item accusantum doloremque laudantium.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<button class="button-submit">All Posts</button>
+			</div>
+
+
+		</section>
+
+		<section>
+			<div class="count-update">
+				<div>
+					<img src="assets/heart.png" alt="Heart">
+					<p><span class="heading-light">16 845</span> Causes</p>
+				</div>
+				<div>
+					<img src="assets/earth.png" alt="Earth">
+					<p><span class="heading-light">1 549</span> Places</p>
+				</div>
+				<div>
+					<img src="assets/person.png" alt="Silhouette of a person">
+					<p><span class="heading-light">5 139</span> Volunteers</p>
+				</div>
+				<div>
+					<img src="assets/people.png" alt="Silhouette of 2 people">
+					<p><span class="heading-light">235 375</span> Saved</p>
+				</div>
+			</div>
+
+			<div class="faq wrapper">
+				<article class="faq1">
+					<h2><span>What</span> We Do?</h2>
+
+					<p>Consetetur sadipscing elam nonumy eirmod tempor indunt ulabore dolore magna allquyam erat sed:</p>
+
+					<ul>
+						<li><p>At vero eos eaccusam justo</p></li>
+						<li><p>Stet clita kasd gubergre timata</p></li>
+						<li><p>Lorem ipsum dorsit amet</p></li>
+						<li><p>Consetetur sadiping</p></li>
+						<li><p>Nonumy eirmod nvlae</p></li>
+					</ul>
+				</article>
+
+				<article class="faq2">
+					<h2><span>Why</span> Choose Us?</h2>
+
+						<div>
+							<h3>Vero Eoset Accusam <label for="question1"><img src="assets/detailsarrow2.png" alt=""></label></h3>
+
+							<input type="radio" name="faq" id="question1" checked>
+							<p class="answer1">At vero eos et accusam ejusto duo dolores ea rebum stet clita kasd gubergreno sea takimata sanctus est lorem.</p>
+						</div>
+
+
+						<div>
+							<h3>Justo Duo Dolores <label for="question2"><img src="assets/detailsarrow2.png" alt=""></label></h3>
+
+							<input type="radio" name="faq" id="question2">
+							<p class="answer2">At vero eos et accusam ejusto duo dolores ea rebum stet clita kasd gubergreno sea takimata sanctus est lorem.</p>
+						</div>
+
+
+						<div>
+							<h3>Et Ea Rebum. Stet Clita <label for="question3"><img src="assets/detailsarrow2.png" alt=""></label></h3>
+
+							<input type="radio" name="faq" id="question3">
+							<p class="answer3">At vero eos et accusam ejusto duo dolores ea rebum stet clita kasd gubergreno sea takimata sanctus est lorem.</p>
+						</div>
+				</article>
+
+				<div class="faq-volunteer"> <!-- background image -->
+					<img src="assets/volunteer.jpg" alt="Two people happy about volunteering">
+					<div class="faq-volunteer__head">
+						<h2 class="heading-light"><span>Wanna be a <span class="accent">Volunteer</span></span></h2>
+
+						<button class="button-submit">Join In</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact"> <!-- background image -->
+			<div class="wrapper">
+				<h2><span>Get</span> in Touch</h2>
+
+				<div class="contact-info">
+					<div class="phone">
+						<img src="assets/phone.png" alt="Phone icon">
+						<p>Phone: 8 (800) 695-2684</p>
+						<p>Fax: 8 (800) 695-4683</p>
+					</div>
+
+					<div class="location">
+						<img src="assets/map.png" alt="Location icon">
+						<address>
+							PO Box 97845<br>
+							Santa Monica st. 567,<br>
+							Los Angeles, CA, US
+						</address>
+					</div>
+
+					<div>
+						<img src="assets/mail.png" alt="Mail icon">
+						<p>support@mercyheart.com</p>
+					</div>
+				</div>
+
+				<form action="feedback" class="feedback">
+					<div class="feedback-input"> <!-- forgot how to do forms -->
+						<div>
+							<input type="text" class="name">
+							<input type="email" class="mail">
+							<input type="text" class="area">
+						</div>
+
+						<textarea name="" id="" cols="30" rows="10"></textarea>
+					</div>
+					<input type="submit" value="Send" class="button-submit">
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<section class="email-subscription">
+			<h2 class="logo heading-light"><span>Mercy</span> <img src="assets/logo.png" alt="Mercy Heart logo"> Heart</h2>
+
+			<form action="subscribble wrapper">
+				<input type="email" placeholder="Email address">
+
+				<input type="submit" value="Subscribe" class="button-submit">
+			</form>
+		</section>
+
+		<p class="heading-light logo">&copy; Mercy Heart. Designed with <img src="assets/logo.png" alt="Mercy Heart logo"> by MW Templates</p>
+	</footer>
+</body>
+</html>

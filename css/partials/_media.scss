@@ -1,0 +1,249 @@
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.urgent-cause__graph img {
+		width: 100%;
+	}
+
+	.urgent-cause__graph-stat p span {
+		font-size: 3rem;
+	}
+	
+	.faq1 ul li {
+		padding-left: 0;
+	}
+
+	article.faq2, .faq-volunteer {
+		margin-left: 0;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.wrapper {
+		max-width: 500px;
+	}
+
+	.button-submit {
+		font-size: 1rem;
+	}
+
+	.header-menu__brand-hidden {
+		margin-left: 20px;
+	}
+
+	.header-menu__brand {
+		border-bottom: 2px solid $standardColor;
+	}
+
+	.header-nav, .social, figcaption, section.ad {
+		display: none;
+	}
+
+	.participation {
+		display: block;
+
+		div {
+			width: 100%;
+			padding: 50px;
+			background-position: top;
+		}
+	}
+
+	.header-nav-hidden li {
+		border-bottom: 2px solid $accentColor;
+	}
+
+	.urgent-cause__graph {
+		display: block;
+
+		h2, .urgent-cause__graph-stat, .urgent-cause__graph-details {
+			width: 100%;
+			text-align: center;
+		} 
+	}
+
+	.urgent-cause__graph-stat img {
+		width: 80%;
+	}
+
+	.urgent-cause__graph-details {
+		margin-bottom: 30px;
+	}
+
+	blockquote {
+		margin-top: 30px;
+	}
+	
+	.recent-cause__option { 
+		flex-direction: column;
+	}
+
+	.recent-cause__option > div {
+		display: block;
+		margin: 0 auto;
+		padding: 30px 30px 0;
+	}
+
+	.recent-cause__donate-nav li {
+		border-bottom: 1px solid red;
+		margin: 0 2px;
+	}
+
+	.blog-outer-container {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.blog-inner-container {
+		float: none;
+		margin: 0 auto;
+		width: 100%;
+		padding-bottom: 100%;
+	}
+
+	.blog-inner-container.featured {
+		margin: 20px auto;
+		width: 100%;
+		padding-bottom: 100%;
+	}
+
+	.faq {
+		flex-direction: column;
+
+		article {
+			width: 100%;
+			padding-bottom: 50px;
+			position: relative;
+
+			&::before {
+				content: "";
+				position: absolute;
+				border-top: 2px solid $standardColor;
+				width: 50px;
+				top: 0; 
+				left: 0;
+			}
+		}
+
+		article h2 {
+			margin-top: 10px;
+		}
+
+		.faq-volunteer {
+			width: 100%;
+			margin-left: 10px;
+		}
+
+		.faq-volunteer__head {
+			top: 50%;
+			transform: translate(-50%, -50%);
+			bottom: initial;
+
+			h2 {
+				font-size: 2rem;
+				margin-bottom: 50px;
+			}
+		}
+	}
+
+	.faq article {
+		margin: 0;	
+	}
+
+	.contact-info {
+		display: block;
+
+		.location {
+			top: 0;
+		}
+
+		div {
+			margin: 20px 0;
+		}
+	}
+
+	.feedback-input {
+		flex-direction: column;
+
+		& > div {
+			width: 100%;
+
+			input {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	form.feedback textarea {
+		width: 100%;
+		margin: 0;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 520px) {
+	.wrapper {
+		max-width: 100%;
+	}
+
+	.hero-image > div {
+		left: 0;
+		transform: translate(0, -50%);
+	}
+
+	.recent-cause__donate-nav ul {
+		flex-wrap: wrap;
+
+		li {
+			width: 33%;
+			margin: 5px;
+		}
+	}
+
+	.recent-cause__option > div {
+		border: none;
+	}
+	
+	.blog-inner-container:first-child {
+		display: none;
+	}
+
+	.blog-inner-container.featured {
+		padding-bottom: 150%;
+	}
+
+	.faq .faq-volunteer {
+		background: linear-gradient(to left, rgba(62,154,205,0.8), rgba(222,60,51,0.8)), url("../../assets/swirl_pattern.png");
+		@include backgroundFull(repeat, contain, center center);
+		margin-left: 0;
+
+		img {
+			display: none;
+		}
+	}
+
+	.faq .faq-volunteer__head {
+		position: static;
+		transform: translateX(0);
+		padding: 20px;
+	}
+
+	.faq h2, .faq ul, .faq p, .faq h3, .blog-outer-container {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.count-update {
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-content: space-between;
+
+		div {
+			width: 50%;
+
+			&:nth-child(n+3) {
+				margin-top: 20px;
+			}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+/* -- SUBCSRIBE -- */
+
+.email-subscription {
+	background-image: linear-gradient(rgba(77,77,77,0.9), rgba(77,77,77,0.9)), url("../assets/swirl_pattern.png");
+	@include backgroundFull(repeat, contain, center center);
+	padding: 50px 0 40px 0;
+
+	input {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	h2 {
+		margin: 0;
+	}
+}
+
+/* -- FOOTER -- */
+
+footer {
+	background: rgba(52,52,52,0.9);
+
+	img {
+		vertical-align: middle;
+	}
+
+	p {
+		padding: 20px;
+	}
+}
+
+p.heading-light.logo {
+	text-transform: none;
+	font-size: 0.8rem;
+
+	img {
+		width: 25px;
+	}
+}
